@@ -1,0 +1,53 @@
+<!--------SEARCH------------>
+<div class="container main-banner">
+    <div>
+        <h1>The easiest way to find your new job.</h1>
+        <p>Connect to the best companies for free and get the job of your dreams.</p>
+        
+        <form autocomplete="off" class="gorm" action="get">
+            <div class="autocomplete">
+                <input class="search" id="myInput" type="text" name="job" placeholder="Job Position" #jobPosition maxlength="60">
+            </div>
+            
+            <select class="search" name="region" #districs>
+                <option value="all" >Districts</option>
+                <option value="Aveiro">Aveiro</option>
+                <option value="Beja">Beja</option>
+                <option value="Braga">Braga</option>
+                <option value="Bragana">Bragana</option>
+                <option value="Castelo Branco">Castelo Branco</option>
+                <option value="Coimbra">Coimbra</option>
+                <option value="Evora">&#201;vora</option>
+                <option value="Faro">Faro</option>
+                <option value="Guarda">Guarda</option>
+                <option value="Leiria">Leiria</option>
+                <option value="Lisboa">Lisboa</option>
+                <option value="Portalegre">Portalegre</option>
+                <option value="Porto">Porto</option>
+                <option value="Santarem">Santar&#233;m</option>
+                <option value="Setubal">Set&#250;bal</option>
+                <option value="Viana do Castelo">Viana do Castelo</option>
+                <option value="Vila Real">Vila Real</option>
+                <option value="Viseu">Viseu</option>
+                <option value="Ilha da Madeira">Ilha da Madeira</option>
+                <option value="Ilha de Porto Santo">Ilha de Porto Santo</option>
+                <option value="Ilha de Santa Maria">Ilha de Santa Maria</option>
+                <option value="Ilha de São Miguel">Ilha de S&#227;o Miguel</option>
+                <option value="Ilha Terceira">Ilha Terceira</option>
+                <option value="Ilha Graciosa">Ilha Graciosa</option>
+                <option value="Ilha de Sao Jorge">Ilha de S&#227;o Jorge</option>
+                <option value="Ilha do Pico">Ilha do Pico</option>
+                <option value="Ilha do Faial">Ilha do Faial</option>
+                <option value="Ilha das Flores">Ilha das Flores</option>
+                <option value="Ilha do Corvo">Ilha do Corvo</option>
+        </select>
+            <select class="search" name="category" #category>
+                <option value="category">Category</option>
+                <option value="Fulltime">Full Time</option>
+                <option value="parttime">Part Time</option>
+                <option value="temporary">Temporary</option>
+            </select>
+            <input class="search search-submit"type="submit" name="submit" (click)="info(jobPosition.value,districs.value,category.value)"value="Search">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="login-page">
+    <div class="form-acess">
+    <a href="index.html"><img src="../../../assets/img/logo1.png" alt="logo"></a>
+      <form class="login-form">
+        <input type="text" name="login" id="login-acesso" #email value="" placeholder="E-mail"/>
+        <input type="password" name="password-acesso" #password id="password-acesso" value=""placeholder="Password"/>
+        <input type="password" name="password-acesso" #password2 id="password-acesso" value=""placeholder="Confirm Password"/>
+        <button (click)="addApplicant(email, password,password2)">Register</button>
+        <p class="message">Already registered? <a routerLink="/login">Login</a></p>
+        <span>{{ errorMessage }}</span>
+
+      </form>
+    </div>
+</div>
+
+

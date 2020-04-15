@@ -1,0 +1,12 @@
+<!------LIST APPLY-------->
+<div *ngIf="beResults" >
+    <main class="container">
+        <table>
+            <tbody> 
+                <tr *ngFor="let item of beResults">
+                    <td><a [routerLink]="['/consult',item['users']['id']]">{{item['users']['email']}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

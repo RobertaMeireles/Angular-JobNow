@@ -1,0 +1,25 @@
+<!----DETAILS POSITION------>
+<div *ngIf="inputPosition" >
+    <main class="container job">
+        <div>
+            <h1 class="title1">About Position</h1>
+            <h2>Company</h2>
+            <p>{{inputPosition.name}}</p>
+            <h2>Function</h2>
+            <p>{{inputPosition.title}}</p>
+            <h2>City</h2>
+            <p>{{inputPosition.city}}</p>
+            <h2>Category</h2>
+            <p>{{inputPosition.category}}</p>
+            <h2>Resume</h2>
+            <p class="description">{{inputPosition.resume}}</p>
+        </div>
+        <div class="butons">
+            <div *ngIf="showButton">
+                <button class="submit-cv" name="submit" id="submit" (click)="apply()">APPLY</button>
+            </div>
+        </div>
+    </main>
+</div>
+<!--------FOOTER----------->
+<app-footer></app-footer>

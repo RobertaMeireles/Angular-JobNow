@@ -1,0 +1,17 @@
+.positions{
+    margin: 20%;
+    padding: 5px;
+    background: #54a800;
+    color:white;
+    cursor: pointer;
+    border: none;
+}
+
+.delete{
+    margin: 20%;
+    padding: 5px;
+    background: red;
+    color:white;
+    cursor: pointer;
+    border: none;
+}

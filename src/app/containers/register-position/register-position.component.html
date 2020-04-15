@@ -1,0 +1,71 @@
+<!----------CURRICULUM------------>
+<main class="container-form-position">
+    <h1 class="title1">Position</h1>
+    <span>{{ errorMessage }}</span>
+    <form id="formulario-position" onsubmit="" method="post">
+        <fieldset>
+            <div>
+                <label for="position">Position title</label>
+                    <input class="box" type="text" name="position" #title id="position" value="" maxlength="60/"> 
+            </div>
+            <div>
+                <label for="category-company">Category</label>
+                    <select id="category-company" name="category-company" #category value="">
+                        <option value="">Selection</option>
+                        <option value="FullTime">Full Time</option>
+                        <option value="PartTime">Part Time</option>
+                        <option value="Temporary">Temporary</option>
+                    </select>
+            </div>
+            <div>
+                <label for="city-company">City</label>
+                    <select id="city-company" name="city-company" #city value="">
+                        <option value="all" >Districts</option>
+                        <option value="aveiro">Aveiro</option>
+                        <option value="beja">Beja</option>
+                        <option value="braga">Braga</option>
+                        <option value="bragna">Bragana</option>
+                        <option value="castelo branco">Castelo Branco</option>
+                        <option value="Coimbra">Coimbra</option>
+                        <option value="evora">&#201;vora</option>
+                        <option value="faro">Faro</option>
+                        <option value="guarda">Guarda</option>
+                        <option value="leiria">Leiria</option>
+                        <option value="lisboa">Lisboa</option>
+                        <option value="porto alegre">Portalegre</option>
+                        <option value="porto">Porto</option>
+                        <option value="santarem">Santar&#233;m</option>
+                        <option value="setubal">Set&#250;bal</option>
+                        <option value="viana do castelo">Viana do Castelo</option>
+                        <option value="vila real">Vila Real</option>
+                        <option value="viseu">Viseu</option>
+                        <option value="ilha da madeira">Ilha da Madeira</option>
+                        <option value="ilha de porto santo">Ilha de Porto Santo</option>
+                        <option value="ilha de santa maria">Ilha de Santa Maria</option>
+                        <option value="ilha de sao miguel">Ilha de S&#227;o Miguel</option>
+                        <option value="ilha terceira">Ilha Terceira</option>
+                        <option value="ilha graciosa">Ilha Graciosa</option>
+                        <option value="ilha de sao jorge">Ilha de S&#227;o Jorge</option>
+                        <option value="ilha do pico">Ilha do Pico</option>
+                        <option value="ilha do faial">Ilha do Faial</option>
+                        <option value="ilha das flores">Ilha das Flores</option>
+                        <option value="ilha do corvo">Ilha do Corvo</option>
+                    </select>
+             </div>
+            <div>
+                <p><label for="resume">Resume: </label></p>
+                <textarea row="30" cols="50" id="resume" name="resume" #resume value=""></textarea>
+            </div>
+        </fieldset>
+        <div class="butons">
+            <div>
+                <button (click)="validate(title,category,city,resume)"
+                class="submit-cv" name="submit" id="submit">SAVE
+                </button>
+            </div>
+        </div>
+    </form>
+</main>
+
+<!--------FOOTER----------->
+<app-footer></app-footer>

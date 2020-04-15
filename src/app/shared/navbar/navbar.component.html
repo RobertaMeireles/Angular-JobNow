@@ -1,0 +1,33 @@
+<header *ngIf="showNavbar()" class="container header-index">
+    <a routerLink="home"><img class="container-logo" src="../../../assets/img/logo1.png" alt="logo"></a>
+    <button class="btn-menu bg-gradient" id="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+    <!--(click)="open()" / (click)="close()" -->    
+    
+    <nav class="menu" id="menu">
+            <a class="btn-close" id="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <!--home-->
+                <li><a *ngIf="noLogin()" class="sign" routerLink="register">Register</a></li>
+                <li><a *ngIf="noLogin()" routerLink="login">Login</a></li>
+                <li><a *ngIf="noLogin()" routerLink="contact">Contact</a></li>
+                
+                <!--Applicant-area login-->
+                <li><a *ngIf="applicant()" routerLink="curriculum">Curriculum</a></li>
+                <li><a *ngIf="applicant()" routerLink="search-position">Search Position</a></li>
+
+
+                <!--Applicant-area logoff-->
+                <!--register-->
+                <!--login-->
+
+                <!--Company-area-->
+                <li><a *ngIf="company()" routerLink="seach-applicant">Search Applicant</a></li>
+                <li><a *ngIf="company()" routerLink="register-position">Register Position</a></li>
+                <li><a *ngIf="company()" routerLink="list-positions-registered">Position Registered</a></li>
+                <li><a *ngIf="applicantAndCompany()" routerLink="logoff"(click)="logoff()">Logoff</a></li>
+                <!--contact-->
+                <!--sign out-->
+            </ul>
+        </nav>
+</header>
+

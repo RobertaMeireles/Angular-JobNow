@@ -1,0 +1,67 @@
+<!----------CURRICULUM------------>
+<div *ngIf="currentCurriculum">
+    <main class="container-form">
+        <h1 class="title1">Register Your Resume</h1>
+        <form id="formulario" onsubmit="" method="post">
+            <fieldset>
+                <div>
+                    <label for="acesso">E-mail</label>
+                        <input class="box" type="email" name="acesso" #email id="acesso" [(ngModel)]="currentCurriculum.email" readonly=“true”/>
+                </div>
+                <div>
+                    <label for="name">Full Name</label>
+                        <input class="box" type="name" name="name" #name id="name" [(ngModel)]="currentCurriculum.name" maxlength="60/" readonly=“true”> 
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                        <input class="box " type="text" name="address" #address id="address" [(ngModel)]="currentCurriculum.address" maxlength="200/"readonly=“true”/>
+                </div>
+                <div>
+                    <label for="birthday">Date of Birth</label>
+                        <input class="box" type="text" name="birthday" #birthday id="birthday" [(ngModel)]="currentCurriculum.birthday"readonly=“true”/>
+                    </div>
+                <div>
+                    <label for="children">How many children do you have?</label>
+                        <input class="box" type="number" name="children" #children id="children" [(ngModel)]="currentCurriculum.children" min="0" max="15" readonly=“true”/>
+                </div>
+                <div>
+                    <label for="civil">Marital Status</label>             
+                        <select name="civil" [(ngModel)]= "currentCurriculum.civil" #civil id="civil" disabled>
+                            <option value="">Check one Option</option>
+                            <option value="single">Single</option>
+                            <option value="maried">Maried</option>
+                            <option value="divorced">Divorced</option>
+                        </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="Professional">Position of Interest</label>
+                        <input class="box" type="text" name="professional" #interest id="professional" [(ngModel)]="currentCurriculum.interest" maxlength="60" readonly=“true”/>
+                </div>
+                <div>
+                    <label for="scholarity">Education</label>                
+                        <select name="scholarity" [(ngModel)]= "currentCurriculum.education" #education id="scholarity" disabled>
+                            <option value="check1">Check one Option</option>
+                            <option value="basic">High School</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="mester">Master's Degree</option>
+                            <option value="doctor">Doctor Degree</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="idiom">Idiom</label>
+                        <input class="box" type="text" name="idiom" #idiom id="idiom" [(ngModel)]="currentCurriculum.language" maxlength="65" readonly=“true”/>
+                </div>
+            </fieldset>
+            
+            <app-experience-company *ngFor="let item of currentCurriculum.experiences"
+            [inputExp]="item"></app-experience-company>
+                        
+         </form>
+    </main>
+    <!--------FOOTER----------->
+    <app-footer></app-footer>
+    </div>
+    
+    

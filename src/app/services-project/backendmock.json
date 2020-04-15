@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "roberta@roberta.com",
+      "password": "12345",
+      "type": "applicant",
+      "name": "Roberta"
+    },
+    {
+      "name": "Company ABC",
+      "email": "company@company.com",
+      "password": "12345",
+      "type": "company",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "robertameireles.r@gmail.com",
+      "password": "12345",
+      "type": "applicant",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "h@h.com",
+      "password": "12345",
+      "type": "applicant",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "x@x.com",
+      "password": "12345",
+      "type": "applicant",
+      "id": 5
+    }
+  ],
+  "positions": [
+    {
+      "email": "company@company.com",
+      "name": "Company ABC",
+      "title": "Developer",
+      "category": "Fulltime",
+      "city": "Lisboa",
+      "resume": "teste",
+      "id": 2
+    },
+    {
+      "email": "company@company.com",
+      "name": "Company ABC",
+      "title": "Fullstack",
+      "category": "Fulltime",
+      "city": "Porto",
+      "resume": "Teste",
+      "id": 3
+    },
+    {
+      "email": "company@company.com",
+      "name": "Company ABC",
+      "title": "Developer Senior",
+      "category": "FullTime",
+      "city": "beja",
+      "resume": "Teste 2 para cadastro de vaga",
+      "id": 4
+    }
+  ],
+  "curriculum": [
+    {
+      "email": "roberta@roberta.com",
+      "name": "Roberta Meireles da Silva",
+      "address": "Giesta 7",
+      "birthday": "26/03/1987",
+      "children": "0",
+      "civil": "maried",
+      "interest": "Full Stack",
+      "education": "graduate",
+      "language": "English",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "h@h.com",
+      "name": "Hugo folly",
+      "address": "Giesta 7",
+      "birthday": "26/03/1987",
+      "children": "0",
+      "civil": "maried",
+      "interest": "Full Stack",
+      "education": "graduate",
+      "language": "English",
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "email": "x@x.com",
+      "name": "Hugo",
+      "address": "Giesta 7",
+      "birthday": "12",
+      "children": 2,
+      "civil": "divorced",
+      "interest": "21212",
+      "education": "basic",
+      "language": "English",
+      "userId": 5,
+      "id": 3
+    }
+  ],
+  "experiences": [
+    {
+      "companyname": "Flag",
+      "functioncompany": "Full Stack Developer",
+      "work": "Yes",
+      "dateStart": "01/10/2019",
+      "dateEnd": "05/06/2020",
+      "resume": "Full Stack Developer",
+      "curriculumId": 1,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "companyname": "Flag",
+      "functioncompany": "Full Stack Developer",
+      "work": "Yes",
+      "dateStart": "01/10/2019",
+      "dateEnd": "05/06/2020",
+      "resume": "Full Stack Developer",
+      "curriculumId": 2
+    },
+    {
+      "companyname": "Company Teste",
+      "functioncompany": "waiter",
+      "work": "NYes",
+      "dateStart": "01/10/2019",
+      "dateEnd": "05/06/2020",
+      "resume": "TESTE",
+      "curriculumId": 3,
+      "id": 3
+    }
+  ],
+  "userpositionrelation": [
+    {
+      "id": 1,
+      "usersId": 1,
+      "positionsId": 2
+    },
+    {
+      "usersId": 5,
+      "positionsId": 2,
+      "id": 2
+    },
+    {
+      "usersId": 5,
+      "positionsId": 3,
+      "id": 3
+    },
+    {
+      "usersId": 5,
+      "positionsId": 4,
+      "id": 4
+    }
+  ]
+}

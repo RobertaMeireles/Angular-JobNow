@@ -1,0 +1,344 @@
+/*------------------*/
+/*---ADVERTISING----*/
+/*------------------*/
+
+.img {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+.img > div {
+    max-width: 200px;
+    align-self: center;
+    justify-content: center;
+    flex: 1;
+    margin: 10px;
+  }
+
+/*------------------*/
+/*---SEND POSITION--*/
+/*------------------*/
+
+.send{
+    background: url(../../../../assets/img/banner2.jpg) no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+}
+
+.send h1{
+    position: relative;
+    left: 10px;
+    top:85px;
+    padding: 3px 5px;
+    font-size: 0.7em;
+    text-shadow: 0.5px 0.5px #000;
+    color:white;    
+}
+
+.send a{
+    position: relative;
+    left: 20px;
+    top:90px;
+    bottom: 50px;
+    padding: 3px 4px;
+    font-size: 0.6em;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: #4b4b4d;
+}
+
+.send a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+/*------------------*/
+/*----STATISTIC-----*/
+/*------------------*/
+
+.status-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    color: #4b4b4d;
+}
+
+.status-box > div {
+    text-align: center;
+    align-self: center;
+    flex: 1;
+    margin: 10px;
+  }
+
+.status-qtd {
+    font-size: 36px;
+}
+
+.status-text {
+    display: flex;
+    font-size: 20px;
+}
+
+/*------------------*/
+/*--ADVANTAGES------*/
+/*------------------*/
+
+.title2{
+    margin: 5% 0 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #666;
+}
+
+
+.advantages-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    flex: 1 10px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.advantages-box > div {
+    flex-wrap: wrap;
+    text-align: center;
+    align-self: center;
+    margin: 25px 0;
+}
+
+.grup img{
+    position: relative;
+    top:40px;
+    left: 30%;
+    width: 100px;
+    text-align: center;
+}
+
+.grup{
+    border: 1px solid white;
+    box-shadow: 5px 10px #888888;
+    width: 300px;
+    height: 300px;    
+    align-items: center;
+    border-radius: 50%;
+}
+
+.grup .status-text{
+    position: relative;
+    top:40px;
+        left: 60px;
+}
+
+.grup p{
+    position: relative;
+    top:30px;
+    padding: 20px;
+    font-size: 1em;
+}
+
+/*--------------------------*/
+/*------SECTION CLIENTS-----*/
+/*--------------------------*/
+
+
+.info-clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    align-content: center;
+}
+
+.info-clients-item{
+    flex-direction: column;
+    margin: 20px auto;
+    flex: 1 80px;
+    margin: 10px;
+}
+
+/*--- MOBILE FIRST---*/
+/* SMALL DEVICES - SMARTPHONES */
+
+@media screen and (min-width: 499px) {
+    /*ADVERTISING*/
+    .img {
+        flex-direction: row;
+        max-width: 500px;
+    }
+              
+    .img > div {
+        flex: 1 250px;
+    }
+
+    /*SEND POSITION*/
+    .send{
+        min-height: 40vh;
+    }
+        
+    .send h1{
+        top:112px;
+        padding: 2px;
+        font-size: 1em;
+        color:white;    
+    }
+    
+    .send a{
+        left: 15px;
+        top:130px;
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    /*STATISTIC*/
+
+    /*ADVANTAGES*/
+
+    /*SECTION CLIENTS*/
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+    /*ADVERTISING*/
+    .container{
+        width: 100%;
+    }
+
+    .img {
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+              
+    .img > div {
+        flex: 1 250px;
+        margin: 10px;
+    }
+    /*SEND POSITION*/
+    .send{
+        min-height: 80vh;
+    }
+        
+    .send h1{
+        left: 25px;
+        top:220px;
+        padding: 3px 5px;
+        font-size: 2em; 
+    }
+    
+    .send a{
+        left: 35px;
+        top:250px;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 960px){
+    /*ADVERTISING*/
+    .container{
+        width: 100%;
+    }
+    
+    .img {
+        flex-direction: row;
+        max-width: 500px;
+      }
+      
+      .img > div {
+        flex: 1 250px;
+      }
+
+    /*SEND POSITION*/
+    .send{
+        background: url(../../../../assets/img/banner2.jpg) no-repeat center;
+        background-size: cover;
+        min-height: 80vh;
+    }
+        
+    .send h1{
+        left: 65px;
+        top:170px;
+        padding: 3px 5px;
+        font-size: 2.8em;
+    }
+    
+    .send a{
+        left: 80px;
+        top:200px;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    /*STATISTIC*/
+    .container{
+        width: 100%;
+    }
+
+    .status-box {
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        margin: 100px auto;
+    }
+
+    .status-box > div {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .status-qtd {
+        justify-content: center;
+        font-size: 36px;
+    }
+
+    .status-text {
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    /*ADVANTAGES*/
+    .container{
+        width: 100%;
+    }
+    .advantages-box{
+        flex-direction: row;
+        margin: 0 auto;
+        flex: 1 10px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .advantages-box > div {
+        margin: 25px;
+    }
+
+    .grup .status-text{
+        left: 0;
+    }
+
+    /*SECTION CLIENTS*/
+    .info-clients-item{
+        flex-direction: row;
+        margin: 10px;
+    }
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 960px){
+    .container{
+        width: 100%;
+    }
+
+}

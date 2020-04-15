@@ -1,0 +1,14 @@
+<!----ALL POSITIONS-------->
+<div *ngIf=" allPositions"> 
+    <main class="container">
+        <h1 class="title1">Positions Registered</h1>
+        
+        <app-comp-list-register *ngFor="let item of allPositions"
+        [inputPosition]="item"></app-comp-list-register>
+
+    </main>
+</div>
+
+<!--------FOOTER----------->
+<app-footer></app-footer>
+

@@ -1,0 +1,384 @@
+
+/*-------------------------------------------*/
+/*----------CURRICULM / POSITION-------------*/
+/*-------------------------------------------*/
+
+.container-form,
+.container-form-position{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.header-formulario .logo-formulario{
+    padding: 20px;
+    width: 50%;
+    height: 40%;
+}
+
+
+.container-form .title1,
+.container-form-position .title1{
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #666;
+}
+
+.container-form #formulario,
+.container-form-position #formulario-position{
+    display: block;
+}
+
+.container-form #formulario .box,
+.container-form #formulario select,
+.container-form #formulario textarea,
+.container-form-position #formulario-position .box,
+.container-form-position #formulario-position select,
+.container-form-position #formulario-position textarea{
+    background: #f2f2f2;
+    width: 100%;
+    margin: 3% auto;
+    padding: 5%;
+    border: none;
+}
+
+.container-form #formulario select,
+.container-form-position #formulario-position select{
+    width: 105%;
+}
+
+.container-form #formulario label,
+.container-form #formulario .radio-name,
+.container-form-position #formulario-position label{
+    color: #4b4b4d;
+    font-weight: 700;
+} 
+
+.container-form #formulario .radio-formulario{
+    margin-bottom: 5%;
+}
+
+.container-form #formulario .radio-name{
+    margin-bottom: 2%;
+} 
+
+.container-form #formulario fieldset{
+    padding-right: 10%;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+}
+
+.container-form-position #formulario-position fieldset{
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+}
+
+.container-form #formulario textarea{
+    width: 100%;
+    height: 200px;
+    margin-bottom:20px;
+}
+
+.container-form-position #formulario-position textarea{
+    width: 83%;
+    height: 200px;
+    margin-bottom:20px;
+}
+
+.container-form #formulario .submit-exp{
+    padding: 2% 3%;
+    text-align: center;
+    background: #838383;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container-form #formulario .submit-cv,
+.container-form-position #formulario-position .submit-cv,
+.container .submit-cv{
+    margin: 3%;
+    padding: 10px 20px;
+    background: #54a800;
+    color:white;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9em;
+}
+
+.container-form #formulario .home,
+.container-form-position #formulario-position .home,
+.container.home{
+    margin: auto;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.container-form #formulario .butons,
+.container-form-position #formulario-position .butons,
+.container .butons{
+    display: flex;
+    align-items: center;
+}
+
+.container-form #formulario .butons > div,
+.container-form-position #formulario-position .butons > div,
+.container .butons > div{
+    margin:10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------------------------*/
+/*------------------POSITION----------------------------*/
+/*------------------------------------------------------*/
+
+.container-form-position #formulario-position #position{
+    width: 84%;
+}
+
+.container-form-position #formulario-position #category-company,
+.container-form-position #formulario-position #city-company{
+    width: 94%;
+}
+
+/*------------------------------------------------------*/
+/*------------------ACESS-------------------------------*/
+/*------------------------------------------------------*/
+
+.login-page {
+    width: 300px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+  
+.form-acess {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-acess input {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-acess button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #54a800;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-acess .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form-acess .message a {
+    color: #54a800;
+    text-decoration: none;
+}
+
+/*--- MOBILE FIRST---*/
+
+/* SMALL DEVICES - SMARTPHONES */
+
+@media screen and (min-width: 499px) {
+    .header-formulario .logo-formulario{
+        width: 30%;
+    }
+
+    .container-form #formulario .box,
+    .container-form #formulario select,
+    .container-form #formulario textarea,
+    .container-form-position #formulario-position .box,
+    .container-form-position #formulario-position select,
+    .container-form-position #formulario-position textarea{
+        margin: 2% auto;
+        padding: 3%;
+    }
+ 
+    .container-form #formulario textarea{
+        margin-bottom: 20px;
+    }
+ 
+/*-----------------------------------------*/
+/*---------------POSITION------------------*/
+/*-----------------------------------------*/
+ 
+    .container-form-position #formulario-position #position{
+        width: 90%;
+    }
+     
+    .container-form-position #formulario-position #category-company,
+    .container-form-position #formulario-position #city-company{
+        width: 95%;
+    }
+ 
+    .container-form-position #formulario-position textarea{
+        width: 90%;
+    }
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+
+/*------CURRICULM / POSITION---------------*/
+
+    .header-formulario .logo-formulario{
+        width: 12%;
+    }
+
+    .container-form #formulario .box,
+    .container-form #formulario select,
+    .container-form #formulario textarea,
+    .container-form-position #formulario-position .box,
+    .container-form-position #formulario-position select,
+    .container-form-position #formulario-position textarea{
+        margin: 2% auto;
+        padding: 3%;
+    }
+
+    .container-form #formulario textarea{
+        margin-bottom: 20px;
+    }
+
+/*-----------------------------------------*/
+/*---------------POSITION------------------*/
+/*-----------------------------------------*/
+
+    .container-form-position #formulario-position #position{
+        width: 90%;
+    }
+
+    .container-form-position #formulario-position #category-company,
+    .container-form-position #formulario-position #city-company{
+        width: 95%;
+    }
+
+    .container-form-position #formulario-position textarea{
+        width: 90%;
+    }
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 960px){
+    /*-----------------------------------------*/
+/*--------CURRICULM/POSITION---------------*/
+/*-----------------------------------------*/
+
+.header-formulario .logo-formulario{
+    width: 12%;
+}
+
+
+.container-form .title1,
+.container-form-position .title1{
+    margin: 3% auto;
+}
+
+.container-form #formulario .box,
+.container-form #formulario select,
+.container-form #formulario textarea,
+.container-form-position #formulario-position .box,
+.container-form-position #formulario-position select,
+.container-form-position #formulario-position textarea{
+    margin: 1% auto;
+    padding: 1%;
+}
+
+.container-form #formulario fieldset{
+    padding-right: 3%;
+}
+
+.container-form #formulario select{
+    width: 102%;
+}
+
+.container-form #formulario select,
+.container-form #formulario textarea{
+    margin: 1% auto;
+    padding: 2%;
+}
+
+.container-form #formulario .radio-formulario,
+.container-form #formulario .radio-name{
+    margin-bottom: 1%;
+}
+
+
+.container-form #formulario textarea{
+    width: 98%;
+    margin-bottom:25px;
+}
+
+.container-form #formulario .submit-exp{
+    padding: 0.5% 1%;
+}
+
+.container-form #formulario .submit-cv{
+    margin: 3%;
+    padding: 10px 32px;
+}
+
+.container-form #formulario .home{
+    padding: 8px 30px;
+}
+
+.container-form #formulario .butons,
+.container-form-position #formulario-position .butons{
+    justify-content: center;
+}
+
+.container-form #formulario .butons > div,
+.container-form-position #formulario-position .butons > div{
+    margin:10px 20px;
+    padding: 5px;
+}
+
+.container-form #formulario textarea{
+    margin-bottom: 20px;
+}
+
+
+/*-----------------------------------------*/
+/*---------------POSITION------------------*/
+/*-----------------------------------------*/
+
+    .container-form-position #formulario-position #position{
+        width: 98%;
+    }
+
+    .container-form-position #formulario-position #category-company,
+    .container-form-position #formulario-position #city-company{
+        width: 100%;
+    }
+
+    .container-form-position #formulario-position textarea{
+        width: 98%;
+    }
+}
+

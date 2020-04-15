@@ -1,0 +1,27 @@
+<fieldset class="job">
+    <div>
+        <label for="company">Company Name</label>
+        <input class="box" type="text" name="companyName" #companyName id="companyName" [(ngModel)]="inputExp.companyname"/>
+    </div>
+    <div>
+        <label for="function">Function</label>
+            <input class="box" type="text" name="function" #companyfunction id="function" [(ngModel)]="inputExp.functioncompany"/>
+    </div>
+    <label for="work">Still at this company?</label>                
+    <select name="work" #work id="work" value={{inputExp.work}}>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <div>
+        <label for="date-start">Date Start the Job</label>
+            <input class="box" type="text" name="date-start" #dateStart id="date-start" [(ngModel)]="inputExp.dateStart"/>
+    </div>
+    <div>
+        <label for="date-end">Date Finish the Job</label>
+            <input class="box" type="text" name="date-end" #dateEnd id="date-end" [(ngModel)]="inputExp.dateEnd"/>
+    </div>
+    <div>
+        <p><label for="resume">Summary of Activities</label></p>
+            <textarea row="30" cols="50" id="resume" name="resume" #resume [(ngModel)]="inputExp.resume"></textarea>
+    </div>
+</fieldset>

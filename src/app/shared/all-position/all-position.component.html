@@ -1,0 +1,17 @@
+<!----ALL POSITIONS-------->
+    <main class="container">
+        <table>
+            <tbody> 
+                <tr *ngFor="let item of positions">
+                    <td><a [routerLink]="['/details-position',
+                        item.id]">{{item.name}}</a></td>
+                    <td>{{item.title}}</td>
+                    <td>{{item.city}}</td>
+                    <td>{{item.category}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+
